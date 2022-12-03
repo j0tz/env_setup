@@ -24,6 +24,15 @@ echo " |  /   V                ))              V   \  | ";
 echo " |/     \`               //               ´     \|";
 echo " \`                     //                       ´";
 echo "                       V                          ";
+echo "                                                  ";
+
+echo "WARNING: By proceeding with the execution of the script, unwanted changes may be made to your machine."
+read -r -p "Do you want to continue? [Y/n] " continue
+
+if [[ "$continue" =~ ^([nN][oO]|[nN])$ ]]; then
+	echo "bye!"
+	exit 0
+fi
 
 # Software installation
 ./software/install_htop.sh
