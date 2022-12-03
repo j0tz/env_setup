@@ -13,17 +13,18 @@ echo "             /   \  (_\  /_)   /   \              ";
 echo " ___________/_____\__\@  @/___/_____\____________ ";
 echo "|                    |\../|                      |";
 echo "|                     \VV/                       |";
-echo "|   This script will help with the process of    |";
-echo "|  installing and configuring applications on a  |";
-echo "|  new Linux system (Ubuntu and derivatives).    |";
+echo "|    This script will automate the process of    |";
+echo "|  installing and configuring programs on a new  |";
+echo "|     Linux system (Ubuntu and derivatives).     |";
 echo "|     https://github.com/j0tz/my_workstation     |";
-echo "|              ~ Written by @j0tz ~              |";
+echo "|              ~ Created by @j0tz ~              |";
 echo "|________________________________________________|";
-echo " |    /\ /              \\\              \ /\    | ";
+echo " |    /\ /              \\\              \ /\    |";
 echo " |  /   V                ))              V   \  | ";
-echo " |/     \`               //               ´     \| ";
-echo " \`                     //                      ´ ";
+echo " |/     \`               //               ´     \|";
+echo " \`                     //                       ´";
 echo "                       V                          ";
 
 # Software installation
+./software/install_htop.sh
 ./software/install_flameshot.sh
