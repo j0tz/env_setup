@@ -36,4 +36,5 @@ fi
 
 # Software installation
 ./software/install_htop.sh
+./software/install_git.sh
 ./software/install_flameshot.sh
