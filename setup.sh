@@ -46,9 +46,10 @@ fi
 
 echo
 echo "SUCESSFULY COMPLETED."
-read -r -p "Do you want to restart this PC now? [Y/n] " restart # TO DO: The reset message should be changed to a more technical message.
+echo "Finally, you can restart your machine now, or if you prefer, you can do it later."
+read -r -p "Do you want to restart your computer now? [Y/n] " restart
 
-if [[ "$restart" =~ ([yY][eE][sS]|[yY])$ ]]; then
+if [[ "$restart" =~ ^([yY][eE][sS]|[yY])$ ]]; then
 	sudo shutdown -r now
 else
 	exit 0
