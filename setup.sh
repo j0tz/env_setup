@@ -46,7 +46,7 @@ fi
 
 echo
 echo "SUCESSFULY COMPLETED."
-echo "Finally, you can restart your machine now, or if you prefer, you can do it later."
+echo "Finally, you can restart your computer now, or if you prefer, you can do it later."
 read -r -p "Do you want to restart your computer now? [Y/n] " restart
 
 if [[ "$restart" =~ ^([yY][eE][sS]|[yY])$ ]]; then
