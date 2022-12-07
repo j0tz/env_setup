@@ -19,6 +19,7 @@ fi
 ./software/install_htop.sh
 ./software/install_git.sh
 ./software/install_flameshot.sh
+./software/install_pycharm_ce.sh
 
 echo
 echo "SUCESSFULY COMPLETED."
