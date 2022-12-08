@@ -1,5 +1,9 @@
 #!/bin/bash
 
+LOG_FILE_LOCATION=/home/$(id -un)
+exec > >(tee -i $LOG_FILE_LOCATION/"Log file.log")
+exec 2>&1
+
 if [ "$(lsb_release -i -s)" != "Ubuntu" ] || [ "$(lsb_release -c -s)" != "jammy" ]; then
 	>&2 echo "E: Unable to continue, this script is incompatible with your Linux distribution and/or version."
 	exit 1
@@ -31,3 +35,4 @@ if [[ "$restart" =~ ^([yY][eE][sS]|[yY])$ ]]; then
 else
 	exit 0
 fi
+
