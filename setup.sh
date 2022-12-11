@@ -4,14 +4,19 @@ LOG_FILE_LOCATION=/home/$(id -un)
 exec > >(tee -i $LOG_FILE_LOCATION/"Log file.log")
 exec 2>&1
 
+# Styles
+RED_BOLD="\033[1;31m"
+GREEN_BOLD="\033[1;32m"
+RESET_STYLE="\033[00m"
+
 if [ "$(lsb_release -i -s)" != "Ubuntu" ] || [ "$(lsb_release -c -s)" != "jammy" ]; then
-	>&2 echo "E: Unable to continue, this script is incompatible with your Linux distribution and/or version."
+	>&2 echo -e "$RED_BOLD"E: Unable to continue, this script is incompatible with your Linux distribution and/or version."$RESET_STYLE"
 	exit 1
 fi
 
 ./ascii_art.sh
 
-echo "WARNING: By proceeding with the execution of the script, unwanted changes may be made to your machine."
+echo -e "$RED_BOLD"WARNING:"$RESET_STYLE" "By proceeding with the execution of the script, unwanted changes may be made to your machine."
 read -r -p "Do you want to continue? [Y/n] " continue
 
 if [[ "$continue" =~ ^([nN][oO]|[nN])$ ]]; then
@@ -26,7 +31,7 @@ fi
 ./software/install_pycharm_ce.sh
 
 echo
-echo "SUCESSFULY COMPLETED."
+echo -e "$GREEN_BOLD"SUCESSFULY COMPLETED."$RESET_STYLE"
 echo "Finally, you can restart your computer now, or if you prefer, you can do it later."
 read -r -p "Do you want to restart your computer now? [Y/n] " restart
 
