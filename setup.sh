@@ -25,10 +25,11 @@ if [[ "$continue" =~ ^([nN][oO]|[nN])$ ]]; then
 fi
 
 # Software installation
-./software/install_htop.sh
-./software/install_git.sh
 ./software/install_flameshot.sh
+./software/install_git.sh
+./software/install_htop.sh
 ./software/install_pycharm_ce.sh
+./software/install_vs_code.sh
 
 echo
 echo -e "$GREEN_BOLD"SUCESSFULY COMPLETED."$RESET_STYLE"
@@ -40,4 +41,3 @@ if [[ "$restart" =~ ^([yY][eE][sS]|[yY])$ ]]; then
 else
 	exit 0
 fi
-

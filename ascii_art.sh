@@ -28,4 +28,3 @@ echo          " |/     \`               //               ´     \|";
 echo          " \`                     //                       ´";
 echo          "                       V                          ";
 echo -e       "                                                  ""$RESET_STYLE";
-
