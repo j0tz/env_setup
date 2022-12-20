@@ -1,5 +1,7 @@
 # Environment Setup
 
+Open source script created to automate the trivial but time consuming process of setting up the environment on Linux Ubuntu 22.04 systems.
+
 ## Preview
 
 ![image](https://user-images.githubusercontent.com/118640057/208734078-84fd281a-ce25-4176-91c9-9e35e661a4f1.gif)
