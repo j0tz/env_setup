@@ -39,3 +39,5 @@ Run the following commands in the bash terminal
     ```
 
 ## License
+
+Distributed under the MIT License. See [LICENSE](/LICENSE) for more information.
