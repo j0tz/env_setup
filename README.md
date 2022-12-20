@@ -11,4 +11,31 @@
 
 ## Usage
 
+Run the following commands in the bash terminal
+
+1. Download the repository with the command below:
+
+    ```shell
+    wget https://github.com/j0tz/env_setup/archive/main.zip && mv main.zip ~/Downloads/
+    ```
+
+2. Once that's done, navigate to the Downloads directory and unzip the downloaded main.zip file:
+
+    ```shell
+    cd ~/Downloads/
+    unzip main.zip
+    ```
+
+3. Enter the project folder:
+
+    ```shell
+    cd env_setup-main/
+    ```
+
+4. Finally, run the script:
+ 
+    ```shell
+    bash setup.sh
+    ```
+
 ## License
