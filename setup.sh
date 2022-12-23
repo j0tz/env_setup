@@ -28,6 +28,7 @@ fi
 ./software/install_flameshot.sh
 ./software/install_git.sh
 ./software/install_htop.sh
+./software/install_peek.sh
 ./software/install_pycharm_ce.sh
 ./software/install_startup_disk_creator.sh
 ./software/install_vs_code.sh
