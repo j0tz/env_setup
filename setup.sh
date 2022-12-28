@@ -30,6 +30,7 @@ fi
 ./software/install_gdebi.sh
 ./software/install_git.sh
 ./software/install_htop.sh
+./software/install_neofetch.sh
 ./software/install_peek.sh
 ./software/install_pycharm_ce.sh
 ./software/install_startup_disk_creator.sh
