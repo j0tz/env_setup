@@ -2,10 +2,10 @@
 
 echo
 echo "#################################################";
-echo "######## Installing cURL ########################";
+echo "######## Installing GDebi #######################";
 echo "#################################################";
 echo
 
-if ! type -p curl; then
-	sudo apt install -y curl
+if ! type -p gdebi; then
+	sudo apt install -y gdebi
 fi
