@@ -28,6 +28,7 @@ fi
 ./software/install_curl.sh
 ./software/install_flameshot.sh
 ./software/install_gdebi.sh
+./software/install_gedit.sh
 ./software/install_git.sh
 ./software/install_htop.sh
 ./software/install_neofetch.sh
