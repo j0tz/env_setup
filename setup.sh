@@ -34,6 +34,7 @@ fi
 ./software/install_neofetch.sh
 ./software/install_peek.sh
 ./software/install_pycharm_pe.sh
+./software/install_rar.sh
 ./software/install_startup_disk_creator.sh
 ./software/install_vs_code.sh
 
