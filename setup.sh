@@ -37,6 +37,7 @@ fi
 ./software/install_pycharm_pe.sh
 ./software/install_rar.sh
 ./software/install_startup_disk_creator.sh
+./software/install_unrar.sh
 ./software/install_vs_code.sh
 
 echo
