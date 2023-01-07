@@ -25,6 +25,7 @@ if [[ "$continue" =~ ^([nN][oO]|[nN])$ ]]; then
 fi
 
 # Software installation
+./software/install_clion.sh
 ./software/install_curl.sh
 ./software/install_flameshot.sh
 ./software/install_gdebi.sh
